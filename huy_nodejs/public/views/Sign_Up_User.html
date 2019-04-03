@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/views.css">
+    <title>Sign_up</title>
+</head>
+<body>
+    <div><h2>Hãy điền thông tin đăng kí của bạn vào form dưới đây</h2></div>
+    <form action="/add_user" method="POST">
+        <fieldset>
+            <ul>
+            <li>
+                <label for="username">User name: </label>
+                <input type="text" id="username" name="username" placeholder="username">
+            </li>
+            
+            <li>
+               <label for="password">Password: </label>
+               <input type="password" id="password" name="password"> 
+            </li>
+            
+            <li>
+                <label for="identifycard">Identify card: </label>
+                <input type="text" id="identifycard" name="identifycard" placeholder="identifycard">
+            </li>
+            
+            <li>
+                <label for="phonenumber">Phone number </label>
+                <input type="number" id="phonenumber" name="phonenumber" placeholder="phonenumber">
+            </li>
+            
+            <li>
+               <label for="email">Email:  </label>
+                <input type="text" id="email" name="email" placeholder="email">
+            </li>
+            
+            <li>
+                <label for="birth">Day of birth:  </label>
+                <input type="text" id="birth" name="birth" placeholder="birth">
+            </li>
+            </ul>
+            
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
