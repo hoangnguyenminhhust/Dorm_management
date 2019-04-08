@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/views.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>Hãy điền thông tin update vào form dưới đây</h2>
+    </div>
+    <form action="" method="POST">
+        <fieldset>
+            <ul>
+                <li>
+                    <label for="roomstatus" >Room status: </label>
+                    <input type="text" id="roomstatus" name="roomstatus" placeholder="room status" required>
+                </li>
+
+                <li>
+                    <label for="roomid">Room id: </label>
+                    <input type="text" id="roomid" name="roomid" placeholder="roomid" required>
+                </li>
+
+                <li>
+                    <label for="price" >Price: </label>
+                    <input type="text" id="price" name="price" placeholder="price" required>
+                </li>
+            </ul>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <script>
+        var room_id = window.location.href.split('/')[window.location.href.split('/').length - 1];
+        $("button").on("click", (event)=>{
+            event.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: `/room_update/${ room_id }`,
+                data: {
+                    roomstatus: $("#roomstatus").val(),
+                    roomid: $("#roomid").val(),
+                    price: $("#price").val()
+                },
+                success:function(respon){
+                   window.location.href = "/update_success"
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
