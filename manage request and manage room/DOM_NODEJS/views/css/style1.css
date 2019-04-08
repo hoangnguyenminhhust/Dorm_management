@@ -1,0 +1,135 @@
+* {
+    /* border: 1px red solid; */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+html, body {
+    height: 100%;
+}
+
+header {
+    background-image: url("images/geronimo-gonzalez-giqueaux-1367646-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    padding-top: 10px;
+}
+
+header #slogan {
+    width: 30%;
+    height: 50px;
+    margin-left:750px;
+    margin-top: 200px;
+    font-size: 1.8rem;
+    font-family: 'Permanent Marker', cursive;
+
+
+}
+
+/*menu*/
+
+
+
+.middle {
+    display: flex;
+}
+
+
+
+.menu {
+    width: 200px;
+    background-color: gray;
+    height: -webkit-fill-available;
+}
+
+.item {
+    border-top: 1px solid gray;
+    overflow: hidden;
+}
+
+.btn {
+    display: block;
+    padding: 16px 20px;
+    background: gray;
+    color: white;
+    position: relative;
+}
+
+#defined {
+    display: block;
+    padding: 16px 20px;
+    background: gray;
+    color: #ffffff;
+}
+
+.fa-plus:before {
+    position: absolute;
+    right: 21px;
+    top: 16px;
+}
+
+#defined p {
+    border: 2px black solid;
+    border-radius: 8px;
+    padding-left: 10px;
+    margin-left: -10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: gray;
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+.smenu {
+    background: #333;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.smenu a {
+    display: block;
+    padding:16px 26px;
+    color: white;
+    font-size: 14px;
+    margin: 4px 0px;
+    position: relative;
+}
+
+.smenu a:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: gray;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.smenu a:hover:before {
+    opacity: 1;
+}
+
+.item:target .smenu {
+    max-height: 20em;
+}

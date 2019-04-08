@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/views.css">
+    <script
+		src="http://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+</head>
+<body>
+    
+        <div id="building"></div>
+        <div id="room_status"></div>
+        <div id="room_id"></div>
+        <div id="room_price"></div>
+        <div id="users_in_room">Members: </div>
+    
+    
+
+    
+    <script>
+        const id = window.location.pathname.split("/")[2]
+        console.log(id)
+        $.ajax({
+            type: "GET",
+            url: `/detail/${id}`,
+            success:function(data){
+                $("#building").text(`Building: ${data.building}`)
+                $("#room_status").text(`Room_status: ${data.room_status}`)
+                $("#room_id").text(`Room_id: ${data.room_id}`)
+                $("#room_price").text(`Room_price: ${data.room_price}`)
+                console.log(data.members.length)
+                for(i = 0;i<data.members.length;i++){
+                     $("#users_in_room").append(`${ data.members.length }`)
+                }
+               
+                // console.log(data.members[1].username)
+            }
+        })
+
+    </script>
+
+</body>
+</html>
