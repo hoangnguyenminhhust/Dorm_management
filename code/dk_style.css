@@ -1,0 +1,114 @@
+*{
+	font-family:roboto;
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+}
+body{background-color:#f7f7f7;}
+#top{
+	width:100%;
+	height:36px;
+	padding:15px 0px;
+	background:#192433;
+}
+.acc{
+	width:200px;
+	height:36px;
+	float:right;
+}
+.acc img{border-radius:100%;background:#00bad6;}
+.acc span{
+	float:left;
+	margin:9px 0px 0px 10px;
+}
+.acc span a{color:white;}
+#main{
+	width:100%;
+	height:991px;
+	padding:15px 0px;
+	background:#f0f0f0;
+}
+#form{
+	width:1168px;
+	height:955px;
+	padding:0px 10px;
+	background:white;
+	margin:0px auto;
+	border:1px solid #d5d5d5;
+}
+.form-dk{
+	width:800px;
+	height:774px;
+	margin:60px auto 0px auto;
+}
+.tb{width:800px;border-bottom:1px solid #d5d5d5;}
+.tr{
+	width:800px;height:44px;
+	margin:12px 0px;
+}
+.js{
+	width:241px;
+	padding:4px 15px 0px 0px;
+	text-align:right;
+	float:left;
+	font-size:14px;
+}
+.js span{
+	font-size:10px;
+	color:#969696;
+	font-style:italic;
+}
+.js2{
+	font-size:14px;
+	width:514px;
+	padding:4px 30px 0px 0px;
+	float:left;
+}
+.js2 span{
+	font-size:12px;color:#969696;
+}
+.js2 input.text{
+	width:506px;
+	height:16px;padding:3px;
+}
+
+#abc{
+	width:1168px;
+	height:36px;
+	padding:0px 10px;
+	background:#f1f1ec;
+	margin:0px auto;
+	border:1px solid #d5d5d5;
+}
+#bottom{
+	width:100%;height:200px;
+	background:hsl(215,34%,15%);
+	text-align:center;
+	padding-top:25px;
+	color:white;
+}
+input.submit{
+	width:86px;height:24px;
+	padding:1px 6px;
+	border:1px solid #CCC;
+	margin:12px 0px 0px 270px;
+	background-color: #f7b145;
+	color:white;
+}
+.icon{
+	width:15px;height:15px;
+	padding:11.5px 10px 11.5px 0px;
+	float:left;
+}
+.link{text-align:right;}
+#chat{
+	width:24px;
+	height:24px;
+	background:#45a4ec;
+	padding:18px;
+	border-radius:34px 8px 34px 34px;
+	position:fixed;
+	right:10px;
+	bottom:10px;
+	
+}
