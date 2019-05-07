@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style2.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Manage Manager</title>
+</head>
+
+<body>
+    <div class="middle">
+        <div class="table">
+            <h2>Thông tin sinh viên và ra hạn:</h1>
+                <form action="" class="extend-form">
+                    <h4>Hạn sử dụng phòng</h4>
+                    <input id="date_valid_room" type="date" required>
+                    <h4>Hạn nộp phí phòng</h4>
+                    <input id="date_valid_fee_room" type="date" required>
+                    <h4>Hạn nộp phí sinh hoạt</h4>
+                    <input id="date_valid_fee_living" type="date" required>
+                    <br>
+                    <br>
+                    <input type="submit" value="ra hạn">
+                </form>
+                <h4>Tên tài khoản:</h4>
+                <p id="account"></p>
+                <h4>Tên đầy đủ:</h4>
+                <p id="fullname"></p>
+                <h4>Giới tính</h4>
+                <p id="gender"></p>
+                <h4>Khoa:</h4>
+                <p id="branch"></p>
+                <h4>Khóa:</h4>
+                <p id="course"></p>
+                <h4>Số điện thoại cá nhân</h4>
+                <p id="phone_number"></p>
+                <h4>Email</h4>
+                <p id="email"></p>
+                <h4>Ngày sinh</h4>
+                <p id="birth"></p>
+                <h4>Ngày duyệt</h4>
+                <p id="date_approve"></p>
+                <h4>Hạn sử dụng phòng</h4>
+                <p id="date_valid_room_"></p>
+                <h4>Hạn nộp phí phòng</h4>
+                <p id="date_valid_fee_room_"></p>
+                <h4>Hạn nộp phí sinh hoạt</h4>
+                <p id="date_valid_fee_living_"></p>
+                
+        </div>
+    </div>
+    <div class="menu">
+        <div class="item" id="defined">
+            <p id="username"><i class="fas fa-user-tie"></i>&ensp;&ensp;:&ensp;Admin</p>
+        </div>
+        <li class="item" id="information">
+            <a href="#information" class="btn"><i class="fas fa-info"></i>Thông tin cá nhân<i class="fas fa-plus"></i></a>
+        </li>
+
+        <li class="item" id="manageRoom">
+            <a href="/manage_room_manager" class="btn"><i class="fas fa-bell"></i>Quản lý phòng<i
+                    class="fas fa-plus"></i></a>
+            
+        </li>
+        <li class="item" id="manageRequest">
+            <a href="/manage_request_manager" class="btn"><i class="fas fa-bell"></i>Quản lý yêu cầu<i
+                    class="fas fa-plus"></i></a>
+        </li>
+        <li class="item" id="manageFee">
+            <a href="/manage_fee_manager" class="btn"><i class="fas fa-bell"></i>Quản lý phí<i class="fas fa-plus"></i></a>
+        </li>
+        <li class="item">
+            <a class="btn" id="log_out"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
+        </li>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../../js/manager/extend_student.js"></script>
+    <script src="../../js/manager/checkLogin.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style2.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Manage Manager</title>
+</head>
+
+<body>
+    <div class="middle">
+        <div class="table">
+            <div>
+                <h2>Thông tin phòng:</h1>
+                    <h4 id="input_room_form">Mã phòng:</h4>
+                    <p id="room_id"></p>
+                    <h4 id="input_room_form">Toà nhà:</h4>
+                    <p id="building"></p>
+                    <h4 id="input_room_form">Kiểu phòng:</h4>
+                    <p id="room_gender"></p>
+                    <h4 id="input_room_form">Số lượng sinh viên:</h4>
+                    <p id="amount_std"></p>
+                    <h4 id="input_room_form">Giá phòng:</h4>
+                    <p id="room_price"></p>
+                    <h4 id="input_room_form">Trạng thái phòng:</h4>
+                    <p id="room_status"></p>
+                    <br>
+            </div>
+            <h3>Danh sách sinh viên chờ xếp phòng</h3>
+            <div id="table_1">
+                    <table id="table_1" class="table_1" style="width:100%">
+
+                        </table>
+            </div>
+            <br>
+            <h3>Dánh sách sinh viên chờ duyệt hồ sơ</h3>
+            <div id="table_2">
+                    <table id="table_2" class="table_2" style="width:100%">
+
+                    </table>
+            </div>
+            <br>
+            <h3>Dánh sách sinh viên trong phòng</h3>
+            <div id="table_3">
+                <table id="table_3" class="table_3" style="width:100%">
+
+                </table>
+        </div>
+               
+
+        </div>
+    </div>
+    <div class="menu">
+        <div class="item" id="defined">
+            <p id="username"><i class="fas fa-user-tie"></i>&ensp;&ensp;:&ensp;Admin</p>
+        </div>
+        <li class="item" id="information">
+            <a href="#information" class="btn"><i class="fas fa-info"></i>Thông tin cá nhân<i class="fas fa-plus"></i></a>
+        </li>
+
+        <li class="item" id="manageRoom">
+            <a href="/manage_room_manager" class="btn"><i class="fas fa-bell"></i>Quản lý phòng<i
+                    class="fas fa-plus"></i></a>
+            
+        </li>
+        <li class="item" id="manageRequest">
+            <a href="/manage_request_manager" class="btn"><i class="fas fa-bell"></i>Quản lý yêu cầu<i
+                    class="fas fa-plus"></i></a>
+        </li>
+        <li class="item" id="manageFee">
+            <a href="/manage_fee_manager" class="btn"><i class="fas fa-bell"></i>Quản lý phí<i class="fas fa-plus"></i></a>
+        </li>
+        <li class="item">
+            <a class="btn" id="log_out"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
+        </li>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../../js/manager/add_student_room.js"></script>
+    <script src="../../js/manager/checkLogin.js"></script>
+
+</body>
+
+</html>
