@@ -1,0 +1,208 @@
+* {
+    /* border: 1px red solid; */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+html, body {
+    height: 100%;
+}
+
+header {
+    background-image: url("images/geronimo-gonzalez-giqueaux-1367646-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    padding-top: 10px;
+}
+
+header #slogan {
+    width: 30%;
+    height: 50px;
+    margin-left:750px;
+    margin-top: 200px;
+    font-size: 1.8rem;
+    font-family: 'Permanent Marker', cursive;
+
+
+}
+
+/*menu*/
+
+
+
+.menu {
+	float: left;
+    width: 200px;
+    background-color: gray;
+    height: -webkit-fill-available;
+}
+
+.item {
+    border-top: 1px solid gray;
+    overflow: hidden;
+}
+
+.btn {
+    display: block;
+    padding: 16px 20px;
+    background: gray;
+    color: white;
+    position: relative;
+}
+
+#defined {
+    display: block;
+    padding: 16px 20px;
+    background: gray;
+    color: #ffffff;
+}
+
+.fa-plus:before {
+    position: absolute;
+    right: 21px;
+    top: 16px;
+}
+
+#defined p {
+    border: 2px black solid;
+    border-radius: 8px;
+    padding-left: 10px;
+    margin-left: -10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: gray;
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+.smenu {
+    background: #333;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.smenu a {
+    display: block;
+    padding:16px 26px;
+    color: white;
+    font-size: 14px;
+    margin: 4px 0px;
+    position: relative;
+}
+
+.smenu a:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: gray;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.smenu a:hover:before {
+    opacity: 1;
+}
+
+.item:target .smenu {
+    max-height: 10em;
+}
+
+.Body{
+	float: left;
+	width: 1000px;
+	height: 100vh;
+}
+.Body-Top{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	padding-bottom: 20px;
+	background-color: #888;
+}
+.Body-Top-In{
+	position: relative;
+	left: 270px;
+	width: 330px;
+	height: 50px;
+}
+.Body-Top-Bound{
+	position: absolute;
+	width: 330px;
+	height: 30px;
+	bottom: 0;
+	left: 0;
+	border: 1px solid #999; 
+}
+.Body-Top-Bound:hover{
+	border: 1px solid #111; 
+}
+.Body-Top-In input{
+	position: absolute;
+	width: 300px;
+	height: 30px;
+	bottom: 0;
+	left: 0;
+	border: none;
+}
+.Body-Top-In-Search{
+	position: absolute;
+	text-decoration: none;
+	color: black;
+	width: 30px;
+	height: 30px;
+	bottom: 0;
+	right: 0;
+	border-left: 1px solid #999; 
+}
+.Body-Top-In-Search i{
+	position: absolute;
+	bottom: 7px;
+	right: 7px;
+}
+
+.Body-Top-Button-Bound{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 400px;
+	height: 50px;
+}
+.Body-Top-Button{
+	margin-right: 20px;
+	margin-top: 20px;
+	float: right;
+	width: 100px;
+	height: 30px;
+	border: 1px solid #999; 
+	text-align: center;
+}
+.Body-Top-Button:hover{
+	border: 1px solid #111; 
+}
+.Body-Top-Button a{
+	color: black;
+	display: block;
+	padding-top: 5px;
+}

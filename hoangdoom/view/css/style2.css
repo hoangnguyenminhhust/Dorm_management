@@ -1,0 +1,77 @@
+.Body{
+    margin: auto;
+	width: 1000px;
+	height: 100vh;
+}
+.Body-Top{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	padding-bottom: 20px;
+	background-color: #888;
+}
+.Body-Top-In{
+	position: relative;
+	left: 270px;
+	width: 330px;
+	height: 50px;
+}
+.Body-Top-Bound{
+	position: absolute;
+	width: 330px;
+	height: 30px;
+	bottom: 0;
+	left: 0;
+	border: 1px solid #999; 
+}
+.Body-Top-Bound:hover{
+	border: 1px solid #111; 
+}
+.Body-Top-In input{
+	position: absolute;
+	width: 298px;
+	height: 28px;
+	bottom: 0;
+	left: 0;
+	border: none;
+}
+.Body-Top-In-Search{
+	position: absolute;
+	text-decoration: none;
+	color: black;
+	width: 30px;
+	height: 30px;
+	bottom: 0;
+	right: 0;
+	border-left: 1px solid #999; 
+}
+.Body-Top-In-Search i{
+	position: absolute;
+	bottom: 7px;
+	right: 7px;
+}
+
+.Body-Top-Button-Bound{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 400px;
+	height: 50px;
+}
+.Body-Top-Button{
+	margin-right: 20px;
+	margin-top: 20px;
+	float: right;
+	width: 100px;
+	height: 30px;
+	border: 1px solid #999; 
+	text-align: center;
+}
+.Body-Top-Button:hover{
+	border: 1px solid #111; 
+}
+.Body-Top-Button a{
+	color: black;
+	display: block;
+	padding-top: 5px;
+}
